@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>LabCar</title>
+</head>
+
+<body>
+    <!-- Se crea la navegación con una clase de navegación estándar  -->
+    <nav class="navbar navbar-default">
+        <!-- Creamos el contenedor de la navbar -->
+        <div class="container">
+            <!-- Añadimos el logo de la barra de navegación -->
+            <div class="navbar-header">
+                <!-- Agregamos elbotón y el menu de hamburguesa -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Creamos el brand de la barra de navegación con el logo-->
+                <a class="navbar-brand" href="#">
+                    <img class="nvbr" src="assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- Creamos el contenido colapsable y visible en sz md -->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#featured">Viaja</a>
+                    </li>
+                    <li>
+                        <a href="#mission">Conduce</a>
+                    </li>
+                    <li>
+                        <a button type="button" data-toggle="modal" data-target="#myModal">Inicia Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal inicia sesion-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content init">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="assets/images/profile.png" class="img-responsive center-block profileimg" alt="">
+
+                </div>
+                <div class="modal-body">
+                    <div class="modalwindow">
+                        <div class="form-group  center-block"></div>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user">
+                                </i>
+                            </div>
+                            <input class="form-control" id="name" name="name" placeholder="Username" type="text" />
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user">
+                                </i>
+                            </div>
+                            <input class="form-control" id="password" name="name" placeholder="Password" type="text" />
+                        </div>
+                        <button class="btnyellow">LOG-IN</button>
+                        
+                    </div>
+                    <p>Forgot password?
+                        <a class="link" href="">Click Here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de registrarse-->
+    <div class="modal fade modalwindow2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <form role="form" action="" method="post" class="registration-form">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <button class="btnblack">Ya tienes cuenta?</button>
+            <p>O CREA UNA NUEVA CUENTA</p>
+            <div class="form-group">
+                <label class="sr-only" for="form-first-name">Nombre</label>
+                <input type="text" name="form-first-name" placeholder="Nombre" class="form-name form-control" id="form-first-name">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="form-last-name">Apellido</label>
+                <input type="text" name="form-last-name" placeholder="Apellido" class="form-name form-control" id="form-last-name2">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="form-email">Correo Electronico</label>
+                <input type="text" name="form-email" placeholder="Correo Electronico" class="form-email form-control" id="form-email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="form-password">Contrasena</label>
+                <input type="password" name="form-password" placeholder="Contrasena" class="form-email form-control" id="form-password">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="form-city">Ciudad</label>
+                <input type="text" name="form-city" placeholder="Ciudad" class="form-email form-control" id="form-city">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="form-code">Codigo de invitacion</label>
+                <input type="text" name="form-code" placeholder="Codigo de invitacion" class="form-email form-control" id="form-invite">
+            </div>
+            <select class="selectpicker btnblack2">
+                <option>Como supiste de nosotros?</option>
+                <option>Redes Sociales</option>
+                <option>Recomendacion</option>
+            </select>
+            <button type="submit" href="#" class="btn center-block btn-info">Enviar</button>
+        </form>
+    </div>
+    <!-- Modal de registrarse conductor-->
+    <div class="modal fade modalwindow2" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <form role="form" action="" method="post" class="registration-form">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <span>Tienes vehiculo de cuatro puertas?</span>
+            <select class="selectpicker btngrey">
+                <option>Si</option>
+                <option>No</option>
+            </select>
+            <span>Marca</span>
+            <select class="selectpicker btngrey">
+                <option>Elige la marca del vehiculo</option>
+                <option>Mazda</option>
+            </select>
+            <span class="little">No ves la marca de tu vehiculo? Manda un correo a
+                <a href="">correo@correo.com</a>
+            </span>
+            <select class="selectpicker btngrey">
+                <span>Modelo</span>
+                <option>Elige el modelo de tu vehiculo</option>
+                <option>Mazda3</option>
+            </select>
+            <span>Ano</span>
+            <select class="selectpicker btngrey">
+                <option>Elige el ano de tu vehiculo</option>
+                <option>2016</option>
+            </select>
+            <span>Numero de matricula</span>
+            <div class="form-group">
+                <label class="sr-only" for="form-matricula">Numero de matricula</label>
+                <input type="text" name="form-matricula" placeholder="Numero de matricula" class="form-email form-control" id="form-card">
+            </div>
+            <span>La informacion de matricula ayuda a los clientes a identificar el coche</span>
+            <button type="submit" href="#" class="btn center-block btn-info">Enviar</button>
+        </form>
+    </div>
+    <!-- Agregamos el contenedor de todo el body -->
+    <div class="container-fluid nopadding">
+        <!-- Agregamos la primera fila que contendrá la primera sección -->
+        <div class="row banner nopadding">
+            <div class="col-xs-7 col-xs-offset-5  col-lg-4 col-lg-offset-8 col-md-5 col-md-offset-7  banneryellow ">
+                <!-- Contenido que se muestra en mediano y grande -->
+                <div class="visible-md visible-lg visible-sm marginyellow">
+                    <h2>Disfruta del viaje</h2>
+                    <h2>Eres dueño de tu tiempo</h2>
+                    <span>Viaja con Lab &#60; ar </span>
+                    <button button type="button" data-toggle="modal" data-target="#myModal2" class="whitebtn">REGÍSTRATE</button>
+                    <p>
+                        <div class="line"></div> O bien
+                        <div class="line"></div>
+                    </p>
+                    <button button type="button" data-toggle="modal" data-target="#myModal3" class="whitebtn">Conviértete en un conductor</button>
+                </div>
+                <!-- Contenido que se muestra con chico y extrachico -->
+                <div class="visible-xs">
+                    <h2>Comienza a viajar </h2>
+                    <h2>con Lab &#60; ar</h2>
+                    <button class="whitebtn">Descarga el App</button>
+                </div>
+            </div>
+        </div>
+        <!-- Agregamos la segunda fila que contendrá la primera sección -->
+        <div class="row bgsection2 nopadding">
+            <div class="col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-0 topsection2 ">
+                <!-- Contenido que se muestra en mediano y grande -->
+                <div class="visible-md visible-lg visible-sm">
+                    <img src="assets/images/iPhone6Plus.png" class="img-responsive phone pull-left" alt="">
+                    <h3>Descarga la nueva app</h3>
+                    <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil
+                        y rápido.
+                    </p>
+                    <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y note preocupes: tu conductor sabe
+                        exactamente a dónde ir.
+                    </p>
+                </div>
+                <!-- Contenido que se muestra con chico y extrachico -->
+                <div class="visible-xs">
+                    <p class="text-center">
+                        <strong>La nueva app</strong>
+                        <img src="assets/images/iPhone6Plus.png" class="img-responsive phone  center-block" alt="">
+
+                    </p>
+                </div>
+                <div class="visible-xs lowtext">Llega a tu destino aún más rápido</div>
+            </div>
+        </div>
+        <!-- Agregamos la primera fila que contendrá la primera sección -->
+        <div class="row background nopadding">
+            <div class="col-sm-5 col-sm-offset-7 col-xs-12 bannerblack">
+                <!-- Contenido que se muestra en mediano y grande -->
+                <div class="visible-md visible-lg visible-sm">
+                    <h3>Conduce cuando quieras</h3>
+                    <span>Lab Car es una opción flexible para alcanzar tus metas financieras</span>
+                    <button>Conviértete en conductor</button>
+                </div>
+                <!-- Contenido que se muestra con chico y extrachico -->
+                <div class="visible-xs">
+                    <h3>Conduce cuando quieras</h3>
+                    <span>Lab Car es una opción flexible para alcanzar tus metas financieras</span>
+                    <button>Conviértete en conductor</button>
+                </div>
+            </div>
+        </div>
+        <div class="row bgsection22 nopadding ">
+            <div class="col-sm-4  col-md-offset-1 twocolumns">
+                <!-- Contenido que se muestra en mediano y grande -->
+                <div class="visible-md visible-lg visible-sm">
+                    <h3>Tarifas</h3>
+                    <span>Consulta las tarifas de Lab Car aquí</span>
+                    <div class="form">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" name="adress" placeholder="Ingrese su punto de partida">
+                    </div>
+                    <div class="form">
+                        <i class="fa fa-plane" aria-hidden="true"></i>
+                        <input type="text" name="adress" placeholder="Ingrese su destino">
+                    </div>
+                    <button class="whitebtn">Trazar ruta</button>
+                </div>
+                <!-- Contenido que se muestra con chico y extrachico -->
+                <div class="visible-xs">
+                    <h3>Tarifas</h3>
+                    <span>Consulta las tarifas de Lab Car aquí</span>
+                    <div class="form">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" name="adress" placeholder="Ingrese su punto de partida">
+                    </div>
+                    <div class="form">
+                        <i class="fa fa-plane" aria-hidden="true"></i>
+                        <input type="text" name="adress" placeholder="Ingrese su destino">
+                    </div>
+                    <button class="whitebtn">Trazar ruta</button>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="bordermap img-responsive">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Agregamos el pie de pagina -->
+        <div class="row bgsectionb nopadding">
+            <h3>Lab &#60; ar </h3>
+            <hr>
+            <div class="visible-sm  visible-lg visible-md ">
+                <div class="col-sm-offset-1  col-sm-2 last">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                </div>
+                <div class="col-sm-3 large">
+                    <p>Viaja</p>
+                    <p>Conduce</p>
+                    <p>Ciudades</p>
+                    <p>Ciudades</p>
+                    <p>Entregas</p>
+                    <p>Como funciona</p>
+                    <p>Paises</p>
+                    <p>Seguridad</p>
+                </div>
+                <div class="col-sm-2  large">
+                    <p>Oportunidades</p>
+                    <p>Nuestra historia</p>
+                    <p>API de LabCar</p>
+                    <p>Eventos</p>
+                    <p>Desarrolladores</p>
+                    <p>Servicios</p>
+                    <p>Laboratoria</p>
+                    <p>Coders</p>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1">
+                    <img src="assets/images/enBadgeWebGeneric.png" class="img-responsive last2" alt="">
+                    <img src="assets/images/appstore.png" class="img-responsive last3" alt="">
+                </div>
+             
+            </div>
+            <div class="visible-xs ">
+                <div class="col-xs-6 large">
+                    <p>Viaja</p>
+                    <p>Conduce</p>
+                    <p>Ciudades</p>
+                    <p>Ciudades</p>
+                    <p>Entregas</p>
+                    <p>Como funciona</p>
+                    <p>Paises</p>
+                    <p>Seguridad</p>
+                </div>
+                <div class="col-xs-6">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                    <img src="assets/images/enBadgeWebGeneric.png" class="img-responsive last3" alt="">
+                    <img src="assets/images/appstore.png" class="img-responsive last3" alt="">
+                </div>
+              
+            </div>
+            <div class="row bgsectionb2 nopadding">
+                    <div class="col-xs-12 visible-xs nopadding">
+                            <hr> &#169; 2017 LabCar Technologies Inc.
+                        </div>
+                        <div class=" col-sm-12 visible-sm visible-md visible-lg">
+                                <hr> &#169; 2017 LabCar Technologies Inc.
+                            </div>
+            </div>
+        </div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSZbmQFMhwoLiryPx2w86Bpd9RrxFMCLo&callback=initMap">
+        </script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>

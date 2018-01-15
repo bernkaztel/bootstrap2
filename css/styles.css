@@ -1,0 +1,568 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Clase para eliminar el padding en imágenes completas */
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* Clase de h2 */
+
+h2 {
+    font-size: 1.1em;
+    line-height: .8em;
+    padding: 0px;
+}
+
+
+/* Clase de h3 */
+
+h3 {
+    font-size: 1.4em;
+    line-height: .8em;
+    padding-bottom: 10px;
+}
+
+
+/* Clase de p de seccion background*/
+
+.bgsection2 p {
+    font-size: 1em;
+    padding: 10px;
+}
+
+
+/* Clase boton banner span */
+
+.bannerblack span {
+    font-size: 1.2em;
+}
+
+
+/* Estilo para botones */
+
+button {
+    display: block;
+}
+
+
+/* Estilo del logo de LabAr */
+
+.nvbr {
+    display: inline-block;
+    width: 110px;
+}
+
+
+/* Estilo de barra de navegación */
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+
+/* Estilo para imagen banner */
+
+.banner {
+    height: 70vh;
+    width: 100%;
+    background-image: url(../assets/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.marginyellow {
+    padding: 10px;
+}
+
+.line {
+    display: inline-block;
+    border: 1px solid white;
+    width: 10vh;
+    margin-bottom: 5px;
+}
+
+
+/* Estilo de cuadrado sobre banner */
+
+.banneryellow {
+    background-color: #F7B617;
+    color: white;
+    margin-top: 50px;
+    height: auto;
+    font-size: 20px;
+}
+
+
+/* Estilo de boton blanco*/
+
+.whitebtn {
+    font-size: 10px;
+    background-color: rgb(245, 245, 245);
+    margin: 0px;
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    border: 1px rgb(236, 236, 236) solid;
+    border-radius: 5px;
+}
+
+
+/* Estilo de boton amarillo*/
+
+.btnyellow {
+    font-style: bold;
+    font-size: 18px;
+    background-color: #F7B617;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px #F7B617 solid;
+    border-radius: 10px;
+}
+
+
+/* Estilo de boton negro*/
+
+.btnblack {
+    font-style: bold;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    width: 54vh;
+    margin-left: 2vh;
+    text-align: center;
+}
+
+
+/* Estilo de boton negro grande*/
+
+.btnblack2 {
+    font-style: bold;
+    font-size: 18px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(167, 167, 167) solid;
+    border-radius: 10px;
+    width: 54vh;
+    margin-left: 2vh;
+    text-align: center;
+}
+
+
+/* Estilo de boton gris*/
+
+.btngrey {
+    font-style: bold;
+    font-size: 18px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    border: 1px rgb(167, 167, 167) solid;
+    border-radius: 10px;
+    width: 54vh;
+    margin-left: 2vh;
+    text-align: center;
+}
+
+
+/* Estilo de span dentro de Modaal3*/
+
+#myModal3 span {
+    margin-bottom: 1px;
+}
+
+
+/* Estilo de letra pequena*/
+
+.little {
+    font-size: 10px;
+}
+
+
+/* Estilo de modal 2 */
+
+#myModal2 {
+    margin-top: 50px;
+    height: 90vh;
+    width: 80vh;
+}
+
+
+/* Estilo de modal 3  */
+
+#myModal3 {
+    height: 92vh;
+    width: 60vh;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+
+/* Estilo de p dentro de modal2 */
+
+#myModal2 p {
+    margin-left: 17vh;
+}
+
+
+/* Estilo de formname */
+
+.form-name {
+    width: 32vh;
+    float: left;
+}
+
+
+/* Estilo de p en modal window */
+
+.modalwindow p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+
+/* Estimo de a en modalwindow */
+
+.link {
+    color: red;
+}
+
+
+/* Estilo de modal */
+
+.modal {
+    padding: 10px;
+}
+
+
+/* Estilo de boton en bannerblack */
+
+.bannerblack button {
+    font-style: bold;
+    font-size: 18px;
+    background-color: #F7B617;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px #F7B617 solid;
+    border-radius: 10px;
+}
+
+
+/* Estilo para sección 2 contenedor amarillo*/
+
+.bgsection2 {
+    height: 70vh;
+    background-color: #F7B617;
+    color: white;
+}
+
+
+/* Estilo para sección 2  cuadrado sobre fondo */
+
+.topsection2 {
+    background-color: #F7B617;
+    color: white;
+    border: 2px solid white;
+    border-left: none;
+    margin-top: 10vh;
+    max-height: 65vh;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+
+/* Estilo de imagen de tel */
+
+.phone {
+    max-height: 50vh;
+    margin-right: 20px;
+}
+
+
+/* Estilo de cuadrado sobre banner */
+
+.bannerblack {
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    height: 60vh;
+    padding: 3vh;
+}
+
+
+/* Estilo deimagen de fondo */
+
+.background {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../assets/images/conduce.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#map {
+    width: auto;
+    height: 46vh;
+    background-color: grey;
+    padding: 20px;
+}
+
+.bordermap {
+    margin-top: 20px;
+}
+
+
+/* Estilo de dos columnas */
+
+.twocolumns {
+    margin-top: 10vh;
+}
+
+
+/* Estilo para sección 2 contenedor amarillo*/
+
+.bgsection22 {
+    height: 65vh;
+    background-color: #F7B617;
+    color: white;
+}
+
+
+/* Estilo de p en seccion 22 */
+
+.bgsection22 p {
+    font-size: 1.2em;
+    display: block;
+}
+
+
+/* Estilo de input */
+
+input {
+    background-color: #F7B617;
+    border: 1px white solid;
+    margin: 10px;
+    border-radius: 5px;
+    width: 25vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px;
+    color: white;
+}
+
+/* Estilo de boton de seccion b  */
+
+.bgsectionb {
+    height: auto;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-size: 1.1em;
+}
+
+
+/* Estilo de boton de seccion b  */
+
+.bgsectionb2 {
+    height: 10vh;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-size: 1.1em;
+}
+
+
+/* Estilo de h3 en seccion b */
+
+.bgsectionb h3 {
+    font-size: 3em;
+    padding-bottom: 0;
+}
+
+
+/* Estilo de padding */
+
+.last {
+    padding-top: 40vh
+}
+
+
+/* Estilo de padding */
+
+.last2 {
+    padding-top: 25vh;
+}
+
+
+/* Estilo de padding */
+
+.last3 {
+    padding-top: 5vh;
+}
+
+
+/* Estilo de altura de linea */
+
+.large {
+    line-height: 45px;
+}
+
+
+/* Estilo de imagen de perfil */
+
+.profileimg {
+    height: 20vh;
+    width: 20vh;
+}
+
+
+/* Estilo de modal de inicio */
+
+.init {
+    background-color: rgb(0, 153, 128)
+}
+
+
+/* Estilo de ventana de modal */
+
+.modalwindow {
+    height: auto;
+    width: 80vh;
+    background-color: rgb(216, 216, 216);
+    margin: 0 auto;
+    padding: 2vh;
+    border-radius: 5px;
+}
+
+
+/* Estilo de ventana de modal2 */
+
+.modalwindow2 {
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 2vh;
+    border-radius: 5px;
+}
+
+.modal-body{
+height: 50vh;
+width: 50vh;
+}
+
+
+
+
+/* Estilo de input */
+
+.input-group {
+    width: 30vh;
+    background-color: rgb(243, 243, 243);
+    padding-right: 2vh;
+    padding-bottom: 1vh;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+/* Estilo de icono de input */
+
+.input-group-addon {
+    border: none;
+}
+
+
+/* Mediaqueries para pantalla pequena */
+
+@media screen and (max-width: 769px) {
+    .topsection2 {
+        background-color: #F7B617;
+        color: white;
+        border: 2px solid white;
+        margin-top: 10vh;
+        max-height: 70vh;
+        font-size: 1em;
+        padding-bottom: 20px;
+    }
+    .bgsection2 {
+        height: 85vh;
+        background-color: #F7B617;
+        color: white;
+    }
+    .phone {
+        max-height: 50vh;
+        margin: 20px;
+    }
+    .lowtext {
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    .banneryellow {
+        height: 40vh;
+    }
+    .banneryellow .whitebtn {
+        margin-top: 10px;
+    }
+    .bannerblack {
+        color: white;
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.529);
+    }
+    .background {
+        width: 100%;
+        height: 50vh;
+        background-image: url(../assets/images/conduce.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    #map {
+        width: auto;
+        height: 46vh;
+        background-color: grey;
+        padding: 20px;
+        margin: 2vh;
+    }
+    .bordermap {
+        border: 1px solid white;
+        width: 64vh;
+        height: 50vh;
+    }
+    /* Estilo para sección 2 contenedor amarillo*/
+    .bgsection22 {
+        height: auto;
+        margin-bottom: 10px;
+        background-color: #F7B617;
+        color: white;
+    }
+    .bgsectionb {
+        height: auto;
+        background-color: rgb(59, 59, 59);
+        color: white;
+    }
+}
